@@ -1,6 +1,6 @@
-package packA;
+package PackA;
 
-public class Salesperson extends Programmer {
+public class Salesperson extends EmpTmp{
     private int target;
 
     public Salesperson(String n, int exp, int sal, int assignedTarget){
@@ -21,7 +21,7 @@ public class Salesperson extends Programmer {
     }
 
     public void setSalary(int increasedAmount){
-        this.salary = this.salary + increasedAmount;
+        this.salary += increasedAmount;
     }
 
     public void setSalary(){
@@ -34,6 +34,6 @@ public class Salesperson extends Programmer {
     }
 
     public String toString(){
-        return "Salesperson [target=" + target + " " + super.toString() + " ]";
-    }
+        return "Salesperson [target=" + target + ", " + super.toString() + "]";
+    }    
 }

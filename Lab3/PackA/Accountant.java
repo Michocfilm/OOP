@@ -1,6 +1,6 @@
-package packA;
+package PackA;
 
-public class Accountant extends Programmer {
+public class Accountant extends EmpTmp{
     private static String companyName = "berk barn jamkad";
     private int experience;
     private String specialty;
@@ -37,10 +37,10 @@ public class Accountant extends Programmer {
     }
 
     public void sayHi(){
-        System.out.println(getName() + " says hello");
+        System.out.printf("%s, an accountant, say hello\n",getName());
     }
 
     public String toString(){
         return "Accountant [experience=" + experience + ", specialty=" + specialty + "]";
-    }
+    }   
 }

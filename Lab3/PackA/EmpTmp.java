@@ -1,28 +1,26 @@
-package packA;
+package PackA;
 
-public class Programmer {
-    private String name;
+public class EmpTmp {
+    protected String name;
     protected int salary;
-    private int experience;
+    protected int experience;
 
-    public Programmer(String n, int exp, int sal){
+    public EmpTmp(String n, int exp, int sal){
         this.name = n;
         this.experience = exp;
         this.salary = sal;
     }
 
-    public Programmer(String n){
+    public EmpTmp(String n){
         this.name = n;
     }
 
-    public Programmer(){
-
-    }
+    public EmpTmp(){}
 
     public void setName(String name){
         this.name = name;
     }
-
+    
     public String getName(){
         return name;
     }
@@ -43,11 +41,11 @@ public class Programmer {
         return experience;
     }
 
-    public void sayHi(){
-        System.out.println("Hi from " + name);
+    public String toString(){
+        return "EmpTmp [name=" + name + ", salary=" + salary + ", experience=" + experience + "]";
     }
 
-    public String toString(){
-        return "Programmer [name=" + name + ", salary=" + salary + ", experience=" + experience + "]";
-    }
+    public void sayHi(){
+        System.out.println("Hi from an EmpTmp instance. (if derived class does not override this method is invoked.)");
+    }    
 }

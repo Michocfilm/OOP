@@ -1,9 +1,11 @@
-import PackA.*;
+import packA.Accountant;
+import packA.Programmer;
+import packA.Salesperson;
 
 public class Lab2Inheritance {
     public static void main(String[] args) {
-        //q1();
-        //q2_Salesperson();
+        q1();
+        q2_Salesperson();
         q3_Accountant();
     }
 

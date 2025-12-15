@@ -1,23 +1,15 @@
-package packA;
+package PackA;
 
-public class Programmer {
-    private String name;
-    protected int salary;
-    private int experience;
-
+public class Programmer extends EmpTmp{
     public Programmer(String n, int exp, int sal){
-        this.name = n;
-        this.experience = exp;
-        this.salary = sal;
+        super(n, exp, sal);
     }
 
     public Programmer(String n){
-        this.name = n;
+        super(n);
     }
 
-    public Programmer(){
-
-    }
+    public Programmer(){}
 
     public void setName(String name){
         this.name = name;
@@ -44,10 +36,14 @@ public class Programmer {
     }
 
     public void sayHi(){
-        System.out.println("Hi from " + name);
+        System.out.printf("hi from %s\n",getName());
     }
 
     public String toString(){
         return "Programmer [name=" + name + ", salary=" + salary + ", experience=" + experience + "]";
     }
+
+    public String coding(){
+        return "I am coding.";
+    }    
 }
